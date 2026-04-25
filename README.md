@@ -1,1 +1,1 @@
-# ProfitPath
+# Profitex
