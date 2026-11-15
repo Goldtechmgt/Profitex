@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proftex — Play. Connect. Earn.</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .glass { background: rgba(255,255,255,.08); backdrop-filter: blur(14px); border: 1px solid rgba(255,255,255,.12); }
+    .hero { background:
+      radial-gradient(circle at 20% 20%, rgba(99,102,241,.35), transparent 35%),
+      radial-gradient(circle at 80% 10%, rgba(14,165,233,.28), transparent 30%),
+      linear-gradient(135deg,#090d22 0%,#111936 55%,#0b1228 100%); }
+    .card:hover { transform: translateY(-6px); }
+    .card { transition: .25s ease; }
+  
+    .section-kicker { letter-spacing: .18em; font-size: .72rem; font-weight: 800; color: #818cf8; }
+    .earning-card { background: linear-gradient(180deg, rgba(30,41,59,.92), rgba(15,23,42,.96)); }
+    .earning-card .card-img { transition: transform .5s ease; }
+    .earning-card:hover .card-img { transform: scale(1.06); }
+    .faq-item[open] summary { color: #a5b4fc; }
+    .faq-item summary::-webkit-details-marker { display:none; }
+    .faq-item summary { list-style:none; }
+    .wa-float { box-shadow: 0 12px 35px rgba(34,197,94,.35); }
+    .wa-float:hover { transform: translateY(-3px) scale(1.03); }
+    .stat-card { background: rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.10); }
+    </style>
+</head>
+<body class="bg-slate-950 text-white">
+
+<header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-lg border-b border-white/10">
+  <nav class="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
+    <a href="#" class="text-2xl font-black tracking-tight">
+      Prof<span class="text-indigo-400">tex</span>
+    </a>
+    <div class="hidden md:flex gap-7 text-sm text-slate-300">
+      <a href="#earn" class="hover:text-white">Ways to Earn</a>
+      <a href="#how" class="hover:text-white">How It Works</a>
+      <a href="#faq" class="hover:text-white">FAQ</a>
+    </div>
+    <a href="#join" class="rounded-full bg-indigo-500 hover:bg-indigo-400 px-5 py-2.5 text-sm font-bold">Get Started</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero min-h-screen pt-28 flex items-center">
+  <div class="max-w-6xl mx-auto px-5 py-20 grid lg:grid-cols-2 gap-12 items-center">
+    <div>
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-indigo-200 mb-6">
+        <span>✨</span> Your entertainment, your rewards
+      </div>
+      <h1 class="text-5xl md:text-7xl font-black leading-tight">
+        Play. Connect.<br><span class="text-indigo-400">Earn with Proftex.</span>
+      </h1>
+      <p class="mt-6 text-lg text-slate-300 max-w-xl">
+        Discover fun activities, complete challenges, connect with people and collect rewards on one simple platform.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-4">
+        <a href="#earn" class="bg-indigo-500 hover:bg-indigo-400 px-7 py-3.5 rounded-xl font-bold">Explore Ways to Earn</a>
+        <a href="#how" class="glass px-7 py-3.5 rounded-xl font-bold">How It Works</a>
+      </div>
+      <p class="mt-5 text-xs text-slate-400">Rewards, availability and eligibility may vary by activity and location. See platform terms before participating.</p>
+    </div>
+
+    <div class="relative">
+      <div class="glass rounded-3xl p-5 shadow-2xl">
+        <img
+          src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1200&q=85"
+          alt="Person playing games"
+          class="w-full h-80 object-cover rounded-2xl"
+        >
+        <div class="grid grid-cols-3 gap-3 mt-4">
+          <div class="bg-white/10 rounded-2xl p-4"><div class="text-2xl">🎮</div><div class="text-xs mt-1 text-slate-300">Games</div></div>
+          <div class="bg-white/10 rounded-2xl p-4"><div class="text-2xl">🎧</div><div class="text-xs mt-1 text-slate-300">Music</div></div>
+          <div class="bg-white/10 rounded-2xl p-4"><div class="text-2xl">🎁</div><div class="text-xs mt-1 text-slate-300">Bonuses</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="earn" class="py-24 bg-slate-950">
+  <div class="max-w-6xl mx-auto px-5">
+    <div class="text-center max-w-3xl mx-auto">
+      <p class="section-kicker">PROFTEX EARNING ZONE</p>
+      <h2 class="text-4xl md:text-6xl font-black mt-3">Fun Ways to Earn</h2>
+      <p class="text-slate-400 mt-4 text-lg">Choose an activity, complete the requirements and collect eligible rewards.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">
+      <article class="earning-card card rounded-3xl overflow-hidden border border-white/10">
+        <div class="overflow-hidden"><img class="card-img w-full h-52 object-cover" src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1000&q=85" alt="Playing games"></div>
+        <div class="p-6"><span class="text-3xl">🎮</span><h3 class="text-xl font-bold mt-3">Play Games & Earn</h3><p class="text-slate-400 mt-2">Enjoy eligible games, challenges and competitions while building rewards.</p><button class="mt-5 text-indigo-300 font-bold">Play Now →</button></div>
+      </article>
+
+      <article class="earning-card card rounded-3xl overflow-hidden border border-white/10">
+        <div class="overflow-hidden"><img class="card-img w-full h-52 object-cover" src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=1000&q=85" alt="Listening to music"></div>
+        <div class="p-6"><span class="text-3xl">🎧</span><h3 class="text-xl font-bold mt-3">Listen to Music</h3><p class="text-slate-400 mt-2">Discover available music campaigns and earn from eligible listening activities.</p><button class="mt-5 text-indigo-300 font-bold">Listen Now →</button></div>
+      </article>
+
+      <article class="earning-card card rounded-3xl overflow-hidden border border-white/10">
+        <div class="overflow-hidden"><img class="card-img w-full h-52 object-cover" src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1000&q=85" alt="Friendly conversation"></div>
+        <div class="p-6"><span class="text-3xl">💬</span><h3 class="text-xl font-bold mt-3">Chat With People</h3><p class="text-slate-400 mt-2">Take part in approved friendly chat activities and earn according to their rules.</p><button class="mt-5 text-indigo-300 font-bold">Chat Now →</button></div>
+      </article>
+
+      <article class="earning-card card rounded-3xl overflow-hidden border border-white/10">
+        <div class="overflow-hidden"><img class="card-img w-full h-52 object-cover" src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=1000&q=85" alt="Spin and win"></div>
+        <div class="p-6"><span class="text-3xl">🎡</span><h3 class="text-xl font-bold mt-3">Spin & Win</h3><p class="text-slate-400 mt-2">Try eligible promotional spins and see which reward you receive.</p><button class="mt-5 text-indigo-300 font-bold">Spin Now →</button></div>
+      </article>
+
+      <article class="earning-card card rounded-3xl overflow-hidden border border-white/10">
+        <div class="overflow-hidden"><img class="card-img w-full h-52 object-cover" src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=1000&q=85" alt="Sports prediction"></div>
+        <div class="p-6"><span class="text-3xl">📊</span><h3 class="text-xl font-bold mt-3">Bet Predictions</h3><p class="text-slate-400 mt-2">Explore prediction content where legally available. Predictions never guarantee a win.</p><button class="mt-5 text-indigo-300 font-bold">View Predictions →</button></div>
+      </article>
+
+      <article class="earning-card card rounded-3xl overflow-hidden border border-white/10">
+        <div class="overflow-hidden"><img class="card-img w-full h-52 object-cover" src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1000&q=85" alt="Weekly bonuses"></div>
+        <div class="p-6"><span class="text-3xl">🎁</span><h3 class="text-xl font-bold mt-3">Weekly Bonuses</h3><p class="text-slate-400 mt-2">Check back regularly for weekly challenges, promotions and activity bonuses.</p><button class="mt-5 text-indigo-300 font-bold">View Bonuses →</button></div>
+      </article>
+
+      <article class="earning-card card rounded-3xl overflow-hidden border border-white/10 sm:col-span-2 lg:col-span-1">
+        <div class="overflow-hidden"><img class="card-img w-full h-52 object-cover" src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1000&q=85" alt="Quiz"></div>
+        <div class="p-6"><span class="text-3xl">🧠</span><h3 class="text-xl font-bold mt-3">Quizzes</h3><p class="text-slate-400 mt-2">Test your knowledge with quizzes and earn rewards on eligible questions.</p><button class="mt-5 text-indigo-300 font-bold">Take Quiz →</button></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="py-16 bg-slate-900 border-y border-white/10">
+  <div class="max-w-6xl mx-auto px-5 grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div class="stat-card rounded-2xl p-5 text-center"><div class="text-3xl font-black">7+</div><div class="text-slate-400 text-sm mt-1">Ways to earn</div></div>
+    <div class="stat-card rounded-2xl p-5 text-center"><div class="text-3xl font-black">24/7</div><div class="text-slate-400 text-sm mt-1">Platform access</div></div>
+    <div class="stat-card rounded-2xl p-5 text-center"><div class="text-3xl font-black">🌍</div><div class="text-slate-400 text-sm mt-1">Built for digital users</div></div>
+    <div class="stat-card rounded-2xl p-5 text-center"><div class="text-3xl font-black">🎁</div><div class="text-slate-400 text-sm mt-1">Rewards & bonuses</div></div>
+  </div>
+</section>
+
+<section id="how" class="py-24">
+  <div class="max-w-6xl mx-auto px-5">
+    <div class="text-center max-w-2xl mx-auto">
+      <p class="text-indigo-400 font-bold uppercase tracking-widest text-sm">Simple process</p>
+      <h2 class="text-4xl md:text-5xl font-black mt-2">How Proftex works</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6 mt-12">
+      <div class="glass rounded-3xl p-8"><span class="w-12 h-12 rounded-full bg-indigo-500 flex items-center justify-center font-black text-xl">1</span><h3 class="text-xl font-bold mt-5">Create an account</h3><p class="text-slate-400 mt-2">Join Proftex and set up your profile.</p></div>
+      <div class="glass rounded-3xl p-8"><span class="w-12 h-12 rounded-full bg-indigo-500 flex items-center justify-center font-black text-xl">2</span><h3 class="text-xl font-bold mt-5">Choose an activity</h3><p class="text-slate-400 mt-2">Pick games, music, quizzes, chat activities or other available offers.</p></div>
+      <div class="glass rounded-3xl p-8"><span class="w-12 h-12 rounded-full bg-indigo-500 flex items-center justify-center font-black text-xl">3</span><h3 class="text-xl font-bold mt-5">Collect eligible rewards</h3><p class="text-slate-400 mt-2">Complete the requirements and check your reward balance.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="join" class="py-24 bg-indigo-600">
+  <div class="max-w-4xl mx-auto px-5 text-center">
+    <h2 class="text-4xl md:text-5xl font-black">Ready to explore Proftex?</h2>
+    <p class="text-indigo-100 mt-4 text-lg">Play, connect and discover new ways to earn rewards.</p>
+    <div class="mt-8 flex justify-center gap-4 flex-wrap">
+      <button onclick="alert('Connect this button to your registration page.')" class="bg-white text-indigo-700 px-8 py-3.5 rounded-xl font-black">Register Now</button>
+      <button onclick="alert('Connect this button to your login page.')" class="bg-indigo-800 text-white px-8 py-3.5 rounded-xl font-black border border-white/20">Login</button>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="py-24 bg-slate-900">
+  <div class="max-w-4xl mx-auto px-5">
+    <div class="text-center">
+      <p class="section-kicker">HELP CENTER • FAQ</p>
+      <h2 class="text-4xl md:text-5xl font-black mt-3">Frequently Asked Questions</h2>
+      <p class="text-slate-400 mt-4">Everything you need to know about using Proftex and its earning activities.</p>
+    </div>
+
+    <div class="mt-12 space-y-3">
+
+      <details class="faq-item bg-slate-800/70 rounded-2xl p-6 border border-white/10" open>
+        <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">What is Proftex? <span>＋</span></summary>
+        <p class="text-slate-400 mt-4 leading-7">Proftex is an entertainment and digital-activity platform where users can explore different activities such as games, music, quizzes, chat activities, promotional spins and bonuses. The activities available to you may change over time.</p>
+      </details>
+
+      <details class="faq-item bg-slate-800/70 rounded-2xl p-6 border border-white/10">
+        <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">How do I get started? <span>＋</span></summary>
+        <p class="text-slate-400 mt-4 leading-7">Create your Proftex account using the official registration page. After registration, complete any required account setup and open your dashboard to see the activities currently available to you.</p>
+      </details>
+
+      <details class="faq-item bg-slate-800/70 rounded-2xl p-6 border border-white/10">
+        <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">What are the ways to earn on Proftex? <span>＋</span></summary>
+        <p class="text-slate-400 mt-4 leading-7">The current concept includes playing games, listening to music, approved chat activities, Spin & Win promotions, prediction content, weekly bonuses and quizzes. Additional activities can be added later.</p>
+      </details>
+
+      <details class="faq-item bg-slate-800/70 rounded-2xl p-6 border border-white/10">
+        <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">Do I have to complete every activity? <span>＋</span></summary>
+        <p class="text-slate-400 mt-4 leading-7">No. You can choose from the activities available to your account. Each activity can have its own requirements, limits and reward rules.</p>
+      </details>
+
+      <details class="faq-item bg-slate-800/70 rounded-2xl p-6 border border-white/10">
+        <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">Can I use Proftex on my phone? <span>＋</span></summary>
+        <p class="text-slate-400 mt-4 leading-7">Yes. The website is designed to work on smartphones, tablets and computers. A mobile-friendly interface makes it easy to check your activities while using your phone.</p>
+      </details>
+
+      <details class="faq-item bg-slate-800/70 rounded-2xl p-6 border border-white/10">
+        <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">How do I earn from games? <span>＋</span></summary>
+        <p class="text-slate-400 mt-4 leading-7">Open the games section, select an eligible game and follow the activity instructions. Rewards should only be credited when the required conditions are successfully completed.</p>
+      </details>
+
+      <details class="faq-item bg-slate-800/70 rounded-2xl p-6 border border-white/10">
+        <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">How does paid music work? <span>＋</span></summary>
+        <p class="text-slate-400 mt-4 leading-7">When music campaigns are available, you can select an eligible track or listening task and follow the stated requirements. The reward amount and eligibility should be displayed before you begin.</p>
+      </details>
+
+      <details class="faq-item bg-slate-800/70 rounded-2xl p-6 border border-white/10">
+        <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">What does chatting involve? <span>＋</span></summary>
+        <p class="text-slate-400 mt-4 leading-7">Chat activities are intended for friendly conversation through the approved Proftex system. Users should respect other participants, avoid sharing sensitive personal information and follow the platform's community rules.</p>
+      </details>
+
+      <details class="faq-item bg-slate-800/70 rounded-2xl p-6 border border-white/10">
+        <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">How does Spin & Win work? <span>＋</span></summary>
+        <p class="text-slate-400 mt-4 leading-7">Eligible users may receive access to promotional spins. A spin can produce different outcomes depending on the promotion. Any limits, eligibility requirements or terms should be shown clearly before the spin is used.</p>
+      </details>
+
+      <details class="faq-item bg-slate-800/70 rounded-2xl p-6 border border-white/10">
+        <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">Are bet predictions guaranteed to win? <span>＋</span></summary>
+        <p class="text-slate-400 mt-4 leading-7">No. Predictions are not guarantees. Sports and other betting outcomes are uncertain and can result in loss. Any betting-related feature must be used only where lawful and by users who meet the applicable age requirements.</p>
+      </details>
+
+      <details class="faq-item bg-slate-800/70 rounded-2xl p-6 border border-white/10">
+        <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">What are weekly bonuses? <span>＋</span></summary>
+        <p class="text-slate-400 mt-4 leading-7">Weekly bonuses are promotional rewards that may be offered for certain activities, milestones or participation. Bonus conditions, expiry dates and eligibility should always be checked before claiming.</p>
+      </details>
+
+      <details class="faq-item bg-slate-800/70 rounded-2xl p-6 border border-white/10">
+        <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">How do quizzes work? <span>＋</span></summary>
+        <p class="text-slate-400 mt-4 leading-7">Choose an available quiz, answer the questions and follow the instructions shown on screen. Some quizzes may have time limits, attempt limits or specific reward conditions.</p>
+      </details>
+
+      <details class="faq-item bg-slate-800/70 rounded-2xl p-6 border border-white/10">
+        <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">When will my rewards appear? <span>＋</span></summary>
+        <p class="text-slate-400 mt-4 leading-7">Reward timing depends on the activity. Some rewards may be recorded immediately while others can require verification. Your dashboard should show the status of completed activities and available rewards.</p>
+      </details>
+
+      <details class="faq-item bg-slate-800/70 rounded-2xl p-6 border border-white/10">
+        <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">Can I withdraw my rewards? <span>＋</span></summary>
+        <p class="text-slate-400 mt-4 leading-7">Withdrawal options should be connected to the real Proftex backend and clearly explained in the account area. Before launching, make sure your actual minimum withdrawal, processing time, supported payment methods and verification requirements are displayed accurately.</p>
+      </details>
+
+      <details class="faq-item bg-slate-800/70 rounded-2xl p-6 border border-white/10">
+        <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">Is Proftex free to join? <span>＋</span></summary>
+        <p class="text-slate-400 mt-4 leading-7">This depends on the final Proftex registration model. The registration page should clearly state whether registration is free and disclose any fee before a user creates an account or makes a payment.</p>
+      </details>
+
+      <details class="faq-item bg-slate-800/70 rounded-2xl p-6 border border-white/10">
+        <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">Why can't I see a particular activity? <span>＋</span></summary>
+        <p class="text-slate-400 mt-4 leading-7">Activities can be limited by availability, campaign capacity, location, account eligibility, age requirements or temporary maintenance. Check your dashboard again later or contact support if you believe something is missing.</p>
+      </details>
+
+      <details class="faq-item bg-slate-800/70 rounded-2xl p-6 border border-white/10">
+        <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">What should I do if an activity does not credit my reward? <span>＋</span></summary>
+        <p class="text-slate-400 mt-4 leading-7">Keep any relevant activity ID, screenshot or completion information, then contact Proftex support. Do not repeatedly submit the same activity if the rules say duplicate attempts are not allowed.</p>
+      </details>
+
+      <details class="faq-item bg-slate-800/70 rounded-2xl p-6 border border-white/10">
+        <summary class="font-bold text-lg cursor-pointer flex justify-between gap-4">How can I contact Proftex support? <span>＋</span></summary>
+        <p class="text-slate-400 mt-4 leading-7">Use the WhatsApp support button on the website or the official support channel connected to your Proftex account. Replace the WhatsApp placeholder link in this HTML with your real business WhatsApp number before publishing.</p>
+      </details>
+
+    </div>
+
+    <div class="mt-10 text-center">
+      <p class="text-slate-400">Still have a question?</p>
+      <a href="#join" class="inline-block mt-3 bg-indigo-500 hover:bg-indigo-400 px-6 py-3 rounded-xl font-bold">Contact Proftex Support →</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="border-t border-white/10 bg-slate-950">
+  <div class="max-w-6xl mx-auto px-5 py-8 flex flex-col md:flex-row gap-4 justify-between text-sm text-slate-500">
+    <p>© 2026 Proftex. All rights reserved.</p>
+    <p>Entertainment & digital rewards platform • WhatsApp support available</p>
+  </div>
+</footer>
+
+
+<a href="https://wa.me/" target="_blank" rel="noopener"
+   class="wa-float fixed bottom-5 right-5 z-[60] w-16 h-16 rounded-full bg-green-500 hover:bg-green-400 flex items-center justify-center text-3xl transition"
+   aria-label="Chat with Proftex on WhatsApp" title="WhatsApp Support">
+  💬
+</a>
+
+</body>
+</html>
